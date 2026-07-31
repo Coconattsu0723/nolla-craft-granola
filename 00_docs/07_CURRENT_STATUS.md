@@ -27,7 +27,18 @@
 - Footer（ロゴ直下に`CRAFT GRANOLA`を配置し、重複する`nolla`テキストなし）
 - TRIAL BOX・Final CTA共通のポートフォリオ用案内ダイアログ
 
-LP本体のSP・PCレイアウト、公開前確認、GitHub Pagesの`main / docs`用公開構成と`docs`単独の6幅・主要機能確認まで完了。Git操作とPages設定はまだ行っていない。
+LP本体のSP・PCレイアウト、公開前確認、Git管理、GitHubへのpush、GitHub Pages公開まで完了。
+
+## 1-1. 公開情報
+
+- Git管理：開始済み
+- GitHubリポジトリ：作成済み
+- mainブランチ：push済み
+- GitHub Pages：公開済み
+- 公開元：`main / docs`
+- GitHubリポジトリ：`https://github.com/Coconattsu0723/nolla-craft-granola`
+- 公開URL：`https://coconattsu0723.github.io/nolla-craft-granola/`
+- 公開サイトとGitHubリポジトリ：HTTP 200応答を2026/08/01に確認
 
 ## 2. 制作対象外と未完成
 
@@ -41,11 +52,9 @@ LP本体のSP・PCレイアウト、公開前確認、GitHub Pagesの`main / doc
 
 現在の未完成事項：
 
-- Git初期化・GitHubリポジトリ作成・初回push
-- GitHub Pagesの`main / docs`設定
-- 公開URL確定後の公開環境確認
 - 専用OGP画像と`og:image`・`og:url`
 - 正式favicon・Apple Touch Icon
+- 公開後の実機タッチ・スクリーンリーダー確認
 
 ## 3. 作成済みページ
 
@@ -99,7 +108,8 @@ FAQの開閉にはJavaScriptを使用していない。
 - `prefers-reduced-motion`を有効にした実操作：未確認
 - 自動操作環境での`summary`のEnter / Space直接操作：未確認
 - ポートフォリオ用`dialog`のEsc実操作：自動操作環境でEscキー入力が届かず未確認。標準`dialog`と`showModal()`による実装は確認済み
-- 公開環境：未確認
+- 公開URLのHTTP 200応答：確認済み
+- 公開後の実機表示・主要操作：未確認
 
 ## 8. 確認済み画面幅
 
@@ -154,15 +164,13 @@ GitHub Pages用`docs/`でも375、390、768、1024、1366、1440pxの6幅を再�
 
 ## 10. 次に進む最小単位
 
-ユーザーが`docs/`の構成を確認した後、Git初期化と初回コミットを行う。
+公開サイトを実機で確認し、必要な場合だけ制作元を修正して`docs/`へ反映する。
 
 ## 11. 次工程で確認が必要なこと
 
-- GitHubのリポジトリ名と公開先アカウント
-- 初回コミット内容
-- 専用OGP画像と公開URL
+- 専用OGP画像と`og:url`
 - 正式favicon素材
 - 実機スワイプ、スクリーンリーダー、`prefers-reduced-motion`の最終確認範囲
 - Lighthouseを実行する環境と目標値
 - 公開ファイルは確定方針どおり`docs/`へ配置し、GitHub Pagesの`main / docs`から公開する
-- 公開URLは未設定
+- 公開後の修正は制作元、`docs/`、mdの順に同期してからcommit・pushする

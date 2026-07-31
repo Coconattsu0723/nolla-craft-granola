@@ -5,11 +5,11 @@
 
 ## 1. 現在の制作状況
 
-- フェーズ：GitHub Pages用`docs/`構成・Git開始前準備済み
+- フェーズ：GitHub Pages公開済み・公開後確認
 - 実装開始：開始済み
-- 公開状態：未公開
-- 最新実装：GitHub Pagesの`main / docs`用公開ファイルを生成
-- 次の作業：公開用構成確認後のGit初期化・GitHubリポジトリ作成・push
+- 公開状態：公開済み
+- 最新実装：Git管理開始、GitHubへの初回push、GitHub Pages公開
+- 次の作業：公開後の実機確認・必要な修正
 
 ## 2. 確定済み
 
@@ -32,7 +32,7 @@
 
 - [x] PC完成レイアウト
 - [x] 公開方法：GitHub Pages `main / docs`
-- [ ] Git初期化・GitHubリポジトリ作成・push・Pages設定
+- [x] Git初期化・GitHubリポジトリ作成・push・Pages設定
 - [ ] 専用OGP画像
 - [ ] 正式favicon
 
@@ -408,8 +408,8 @@ order.htmlと以降の購入ページ、購入フォーム、決済は未決事�
 - 診断の質問・判定ロジック
 - order.html以降の購入ページ
 
-次工程：
-- order.htmlのSP構造ワイヤー
+次工程（当時の案・後の方針変更で不採用）：
+- order.htmlのSP構造ワイヤー（2026/07/31の1ページ完結方針により不採用）
 
 ### 2026/07/31｜購入導線をポートフォリオ用案内ダイアログへ変更
 
@@ -508,7 +508,7 @@ order.htmlと以降の購入ページ、購入フォーム、決済は未決事�
 決定・修正：
 - titleを`nolla CRAFT GRANOLA｜朝の気分で選ぶ7日間のグラノーラ`へ整理し、descriptionを架空LPであることまで含む説明へ更新
 - `og:title`、`og:description`、`og:type`、`og:site_name`、`twitter:card`を追加
-- 公開URLと専用画像が未決のため、`og:url`と`og:image`は推測で追加しない
+- 公開前時点ではURLと専用画像が確定していなかったため、`og:url`と`og:image`は推測で追加しない
 - Heroは`loading="eager"`と`fetchpriority="high"`、ファーストビュー外の画像34枚は`loading="lazy"`とする
 - 画像の`width`・`height`・`alt`、ページ内リンク、重複ID、ローカル参照を確認
 - ルート`README.md`と`.gitignore`を作成し、macOSが生成した`.DS_Store` 13件を削除
@@ -522,7 +522,7 @@ order.htmlと以降の購入ページ、購入フォーム、決済は未決事�
 
 未確認・次工程：
 - Lighthouse計測、実機タッチスワイプ、スクリーンリーダー、reduced motion実操作は未確認
-- 正式favicon・専用OGP画像・公開URL・公開方法を決めた後、公開環境で再確認する
+- 正式favicon・専用OGP画像を決め、公開先確定後に公開環境で再確認する
 
 ### 2026/08/01｜GitHub Pages用docs構成を作成
 
@@ -538,7 +538,7 @@ order.htmlと以降の購入ページ、購入フォーム、決済は未決事�
 - `docs/index.html`と`docs/js/main.js`の参照先を`./assets/`起点へ変更
 - 空の`docs/.nojekyll`を作成
 - `.gitignore`へ`*.zip`を追加
-- READMEへGitHub Pagesの公開方針と、公開URL未設定を追記
+- READMEへGitHub Pagesの公開方針と公開前時点のURL状況を追記
 
 セキュリティ・Git状態：
 - `.git/`、remote、branchはまだ存在しない
@@ -550,3 +550,27 @@ order.htmlと以降の購入ページ、購入フォーム、決済は未決事�
 - 全6幅でCSS・JavaScript読み込み、SPメニュー／PCナビ切り替え、横はみ出しなし
 - 診断、選択同期・再読み込み保持、STEP 1〜6、両カルーセル、商品詳細、FAQ、ダイアログ、ページ内リンクを確認
 - 画像・CSS・JavaScript・リンクの404、コンソールエラー、ページエラーなし
+
+### 2026/08/01｜Git管理を開始しGitHub Pagesで公開
+
+実施：
+- `nolla_lp_project`全体のGit管理を開始
+- `main`ブランチを使用
+- 初回コミット`Initial commit: nolla CRAFT GRANOLA LP`を作成
+- `origin`へGitHubリポジトリを登録し、`main`ブランチをpush
+- GitHub Pagesの公開元を`main / docs`に設定
+
+公開情報：
+- GitHubリポジトリ：`https://github.com/Coconattsu0723/nolla-craft-granola`
+- 公開URL：`https://coconattsu0723.github.io/nolla-craft-granola/`
+- 公開サイトとGitHubリポジトリがHTTP 200で応答することを2026/08/01に確認
+
+今後の更新方法：
+1. 制作元ファイルを修正
+2. `docs/`へ公開用ファイルを反映
+3. 関係するmdを更新
+4. `git status`で変更内容を確認
+5. `git add .`
+6. 内容に合うメッセージで`git commit`
+7. `git push`
+8. 公開サイトを確認

@@ -354,9 +354,9 @@
 - 保存機能は保存値の直接確認だけでなく、再読み込み後の画面反映でも確認できる
 - カルーセル内部の横スクロールと、ページ全体の横はみ出しは別々に確認する
 
-### 次の作業
+### 次の作業（当時の案・後の方針変更で不採用）
 
-- order.htmlのSP構造ワイヤー
+- order.htmlのSP構造ワイヤー（2026/07/31の1ページ完結方針により不採用）
 
 ## 2026/07/31｜購入CTAのポートフォリオ用案内ダイアログ化
 
@@ -493,7 +493,7 @@
 
 ### 残課題
 
-- 専用OGP画像、正式favicon、公開URL、公開方法は未決
+- 公開前時点では、専用OGP画像、正式favicon、公開先の確定と公開方法の実施が残っていた
 - Lighthouse、実機タッチスワイプ、スクリーンリーダー、reduced motion実操作は未確認
 
 ## 2026/08/01｜GitHub Pages用docs生成
@@ -514,7 +514,7 @@
 ### 管理準備
 
 - `.gitignore`へ`*.zip`を追加
-- READMEへGit管理、GitHub Pages `main / docs`、公開URL未設定を記録
+- READMEへGit管理、GitHub Pages `main / docs`、公開前時点のURL状況を記録
 - Git初期化、add、commit、remote、push、リポジトリ作成、Pages設定は未実施
 - APIキー、Firebase設定、秘密鍵、パスワード、トークン、実個人情報、`.env`、認証JSONは検出されなかった
 
@@ -527,3 +527,34 @@
 - THREE FLAVORSは3 / 3、SEVEN MORNINGSは5 / 5まで進み、末尾の次ボタンがdisabledになることを確認
 - 商品詳細とFAQの複数開閉、TRIAL BOXダイアログ、固定メニュー閉鎖、元CTAへのフォーカス復帰を確認
 - 画像45枚、CSS、JavaScriptはHTTP 200または304。404、コンソールエラー、ページエラーなし
+
+## 2026/08/01｜Git管理開始・GitHub Pages公開
+
+### 実施内容
+
+- プロジェクトルートでGitを初期化
+- `main`ブランチを使用
+- 初回コミット`Initial commit: nolla CRAFT GRANOLA LP`を作成
+- `origin`へ`https://github.com/Coconattsu0723/nolla-craft-granola.git`を登録
+- GitHubの`main`ブランチへpush
+- GitHub Pagesの公開元を`main / docs`に設定
+- 公開URL：`https://coconattsu0723.github.io/nolla-craft-granola/`
+- 公開サイトとGitHubリポジトリがHTTP 200で応答することを確認
+
+### 公開後の更新手順
+
+1. 制作元ファイルを修正する
+2. `docs/`へ公開用ファイルを反映する
+3. 関係するmdを更新する
+4. `git status`で変更内容を確認する
+5. `git add .`
+6. 内容に合うメッセージで`git commit`する
+7. `git push`する
+8. 公開サイトを確認する
+
+### 覚えておくべきポイント
+
+- Gitでは制作フォルダ全体を管理し、GitHub Pagesは`docs/`だけを公開する
+- 表示や機能の修正は制作元へ行い、公開用`docs/`だけを直接修正しない
+- `docs/`の同期とmd更新を確認してからコミットする
+- 作成ページは`index.html`だけで、order関連ページ・購入フォーム・決済は制作対象外

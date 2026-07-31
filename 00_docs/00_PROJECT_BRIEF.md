@@ -13,7 +13,13 @@
 - 実装：HTML / CSS / JavaScript
 - 制作方針：モバイルファースト
 - SP基準幅：375px
-- 公開方法：プロジェクト全体をGit管理し、GitHub Pagesの`main / docs`から公開する方針。公開URLは未設定
+- Git管理：開始済み。プロジェクト全体を管理
+- 公開先：GitHub Pages
+- 公開元：`main / docs`
+- GitHubリポジトリ：`https://github.com/Coconattsu0723/nolla-craft-granola`
+- 公開URL：`https://coconattsu0723.github.io/nolla-craft-granola/`
+- GitHubへのpush：実施済み
+- GitHub Pages公開：実施済み
 
 ## 2. 商品仕様
 
@@ -144,12 +150,13 @@
 - [x] `README.md`の作成
 - [x] title・description・基本SNSメタ情報の整理
 - [x] GitHub Pages用`docs/`公開構成
-- [ ] Git初期化・GitHubリポジトリ作成・push
-- [ ] GitHub Pages設定（`main / docs`）
+- [x] Git初期化・GitHubリポジトリ作成・`main`へpush
+- [x] GitHub Pages設定（`main / docs`）
+- [x] 公開URLでのHTTP 200応答確認
 - [ ] 公開URL確定後の`og:url`
 - [ ] 専用OGP画像と`og:image`
 - [ ] 正式favicon・Apple Touch Icon
 
 ## 10. 次工程
 
-公開用`docs/`の内容をユーザー確認後、Git初期化、GitHubリポジトリ作成、初回pushを行い、GitHub Pagesを`main / docs`へ設定する。公開URL確定後に`og:url`と公開環境を最終確認する。
+公開後の実機表示と主要操作を確認し、必要な場合だけ制作元を修正して`docs/`へ反映する。あわせて専用OGP画像、`og:url`、正式faviconを今後の改善候補として検討する。

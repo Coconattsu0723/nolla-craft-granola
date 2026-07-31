@@ -48,10 +48,15 @@
 
 ## 公開方法
 
-- `nolla_lp_project`全体をGitで履歴管理する方針です。
-- GitHubへpushし、GitHub Pagesの`main / docs`を公開元として使用します。
+- ローカル制作フォルダ全体をGitで履歴管理しています。
+- GitHubの`main`ブランチへpushしています。
+- GitHub Pagesの`main / docs`を公開元として使用しています。
 - 公開用ファイルは`docs/`にまとめ、制作元のHTML・CSS・JavaScript・画像は移動しません。
-- 公開URLは未設定です。
+
+## 公開サイト
+
+- 公開URL：[https://coconattsu0723.github.io/nolla-craft-granola/](https://coconattsu0723.github.io/nolla-craft-granola/)
+- GitHubリポジトリ：[https://github.com/Coconattsu0723/nolla-craft-granola](https://github.com/Coconattsu0723/nolla-craft-granola)
 
 ## デザイン方針
 
@@ -89,9 +94,8 @@
 
 ## 今後の改善候補
 
-- 専用OGP画像の制作と公開URL確定後のOGP設定
+- 専用OGP画像の制作と公開URLを使ったOGP設定
 - 正式favicon・Apple Touch Iconの制作
 - 使用画像のWebPまたはAVIF化とレスポンシブ画像の追加
 - 実機でのタッチスワイプ、スクリーンリーダー、reduced motionの最終確認
-- Git初期化、GitHubリポジトリ作成、`main / docs`のPages設定
-- 公開URL確定後の`og:url`設定と公開環境での最終確認
+- 公開URLを使った`og:url`設定と公開環境での実機確認
