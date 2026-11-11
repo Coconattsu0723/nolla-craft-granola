@@ -29,14 +29,14 @@
         "しっかり満たしたい朝や、\n香ばしい味を選びたい今の気分に合うフレーバーです。",
       eatingStyle: "牛乳や豆乳をかけて。",
       resultImage:
-        "./assets/02_assets/images/flavor-key-visuals/sp/result_sunny-nuts_sp_3x4.png",
+        "./assets/02_assets/images/flavor-key-visuals/sp/result_sunny-nuts_sp_3x4.jpg",
       resultImagePc:
-        "./assets/02_assets/images/flavor-key-visuals/pc/result_sunny-nuts_pc_4x3.png",
+        "./assets/02_assets/images/flavor-key-visuals/pc/result_sunny-nuts_pc_4x3.jpg",
       resultImageAlt:
         "SUNNY NUTSのクラフトグラノーラを楽しむ朝のイメージ",
       eatingIcon: "./assets/02_assets/icons/how-to-eat/icon_milk-soymilk.png",
       boxImage:
-        "./assets/01_brand/package/box/trial-box_full-set_sunny-nuts.png",
+        "./assets/01_brand/package/box/trial-box_full-set_sunny-nuts.jpg",
     },
     "berry-morning": {
       name: "BERRY MORNING",
@@ -45,14 +45,14 @@
         "軽やかに始めたい朝や、\n甘酸っぱい味を選びたい今の気分に合うフレーバーです。",
       eatingStyle: "ヨーグルトと合わせて。",
       resultImage:
-        "./assets/02_assets/images/flavor-key-visuals/sp/result_berry-morning_sp_3x4.png",
+        "./assets/02_assets/images/flavor-key-visuals/sp/result_berry-morning_sp_3x4.jpg",
       resultImagePc:
-        "./assets/02_assets/images/flavor-key-visuals/pc/result_berry-morning_pc_4x3.png",
+        "./assets/02_assets/images/flavor-key-visuals/pc/result_berry-morning_pc_4x3.jpg",
       resultImageAlt:
         "BERRY MORNINGのクラフトグラノーラを楽しむ朝のイメージ",
       eatingIcon: "./assets/02_assets/icons/how-to-eat/icon_yogurt.png",
       boxImage:
-        "./assets/01_brand/package/box/trial-box_full-set_berry-morning.png",
+        "./assets/01_brand/package/box/trial-box_full-set_berry-morning.jpg",
     },
     "cacao-quiet": {
       name: "CACAO QUIET",
@@ -61,14 +61,14 @@
         "少し甘いものが欲しい朝や、\n落ち着いた味を選びたい今の気分に合うフレーバーです。",
       eatingStyle: "コーヒーと一緒に。",
       resultImage:
-        "./assets/02_assets/images/flavor-key-visuals/sp/result_cacao-quiet_sp_3x4.png",
+        "./assets/02_assets/images/flavor-key-visuals/sp/result_cacao-quiet_sp_3x4.jpg",
       resultImagePc:
-        "./assets/02_assets/images/flavor-key-visuals/pc/result_cacao-quiet_pc_4x3.png",
+        "./assets/02_assets/images/flavor-key-visuals/pc/result_cacao-quiet_pc_4x3.jpg",
       resultImageAlt:
         "CACAO QUIETのクラフトグラノーラを楽しむ朝のイメージ",
       eatingIcon: "./assets/02_assets/icons/how-to-eat/icon_coffee.png",
       boxImage:
-        "./assets/01_brand/package/box/trial-box_full-set_cacao-quiet.png",
+        "./assets/01_brand/package/box/trial-box_full-set_cacao-quiet.jpg",
     },
   };
 
